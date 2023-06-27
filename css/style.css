@@ -11,6 +11,7 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	background-color: #dedede;
 }
 h1 {
 	color: #333;
@@ -115,7 +116,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	width: 100%;
 	padding: 0;
 	margin-bottom: 20px;
-	background: url(../img/intro-bg.jpg) no-repeat right top;
+	background: url(../img/intro-bg3.png) no-repeat right top;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -140,14 +141,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', e
 	font-size: 22px;
 }
 header .intro-text {
-	padding-top: 250px;
-	padding-bottom: 200px;
+	padding-top: 400px;
+	padding-bottom: 30px;
 }
 
 
 /* Skills Section */
 #skills {
 	padding: 30px 0 0 0;
+	margin-bottom: 50px;
 }
 
 .wrapper {
@@ -227,13 +229,28 @@ header .intro-text {
   scroll-snap-align: start;
   height: 300px;
   list-style: none;
-  /* background: #4a4949; */
 	border: 2px solid #4a4949;
   cursor: pointer;
   padding: 15px;
   flex-direction: column;
   border-radius: 8px;
 	text-align: center;
+}
+
+.carousel .card:hover {
+  background: #4a4949;
+  color: #fff;
+}
+
+.carousel .card:hover h2 {
+  background: #4a4949;
+  color: #ffefd5;
+	font-weight: bold;
+}
+
+.carousel .card:hover p {
+  background: #4a4949;
+  color: #ffefd5;
 }
 
 .carousel .card .img {
@@ -289,7 +306,8 @@ ul.cat li {
 }
 ol.type li {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 10px;
+	margin-bottom: 30px;
 }
 ol.type li a {
 	font-family: 'Montserrat', sans-serif;
@@ -376,9 +394,10 @@ ol.type li a:hover {
 	opacity: 1;
 }
 
+
 /* Contact Section */
 #contact {
-	padding: 0;
+	padding: 5px;
 	background: #262626;
 }
 #contact h2 {
@@ -387,13 +406,15 @@ ol.type li a:hover {
 	margin: 30px 0;
 }
 #contact img {
-	width: 200px;
-	margin: 5px 20px 10px 0;
+	width: 100px;
+	margin: 5px 10px 0 0;
+	border-radius: 10px;
 }
 #contact p {
 	color: #666;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	line-height: 24px;
+	text-align: justify;
 }
 #contact .social {
 	margin-top: 20px;
@@ -468,7 +489,8 @@ color: #777;
 	margin: 0;
 	font-size: 15px;
 	border-radius: 0;
-	margin-top: 20px;
+	margin-top: 3px;
+	margin-bottom: 10px;
 	text-transform: uppercase;
 	transition: all 0.3s;
 }
@@ -480,7 +502,7 @@ color: #777;
 /* Footer Section*/
 #footer {
 	background: #262626;
-	padding: 0 0 10px 0;
+	padding: 10px 0 10px 0;
 	text-align: center;
 }
 #footer p {
