@@ -40,15 +40,14 @@ h4 {
 	text-transform: uppercase;
 }
 h5 {
-	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 550;
 	line-height: 20px;
 }
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
-	color: #888;
+	color: #4b4b4b;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -279,13 +278,19 @@ header .intro-text {
   font-size: 1.31rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+}
+
+@media screen and (max-width: 800px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
@@ -420,9 +425,10 @@ ol.type li a:hover {
 	border-radius: 10px;
 }
 #contact p {
-	color: #666;
+	color: #dbc6a3;
+	font-size: 20px;
 	margin-bottom: 10px;
-	line-height: 24px;
+	line-height: 30px;
 	text-align: justify;
 }
 #contact .social {
@@ -507,6 +513,19 @@ color: #777;
 	background-color: #666;
 	color: #999;
 }
+
+.success-message {
+  color: green;
+	font-size: 16px;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
 
 /* Footer Section*/
 #footer {
